@@ -43,14 +43,14 @@ header{
 }
 
 .layer1{
-  transform:translateZ(-25px)scale(4)translateY(-5px);
+  transform:translateZ(-25px)scale(4);
 }
 
 .layer2{
-  transform: translateZ(-10px)scale(3)translateY(-5px);
+  transform: translateZ(-10px)scale(3);
 }
 .layer2half{
-  transform: translateZ(-6px)scale(1.75) translateY(-10px);
+  transform: translateZ(-6px)scale(1.75);
 }
 
 .introbot{
