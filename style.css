@@ -124,3 +124,22 @@ button{
   background-color: orange;
 } */
 
+/* pollution section */
+
+.pollution{
+  display: flex;
+  width: 100%;
+}
+
+.PollutionLeft{
+  flex: 30%;
+}
+
+.PollutionRight{
+  flex: 70%;
+}
+
+.PollutionButtonSection{
+  display: flex;
+  flex-direction: column;
+}
