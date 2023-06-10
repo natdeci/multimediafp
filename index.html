@@ -10,8 +10,12 @@
 <body>
     <div class="wrapper">
         <header>
-            <video width="1920" height="1080" class="background" controls autoplay loop>
+            <video width="1920" height="1080" class="background" controls autoplay muted loop>
+                
                 <source src="Assets/Animated-Sun.mp4" type="video/mp4">
+                <script>
+                    document.getElementById('vid').play();
+                </script>
             </video>
             <img src="Assets/Background-Waterfall.png" class="layer1">
             <img src="Assets/Background-Rock.png" class="layer2">
@@ -23,7 +27,7 @@
                     Welcome to our virtual hub dedicated to exploring and addressing pressing environmental issues. Join us as we embark on a journey to understand and restore our planet. Our goal is to raise people’s awareness by providing knowledge and overview of the major issues.
                 </div>
                 <div class="navigation">
-                    <button class="button PollutionButton">pollution</button>
+                    <button class="button PollutionButton">Pollution</button>
                     <button class="button PollutionButton">Climate Change</button>
                     <button class="button PollutionButton">Deforestation</button>
                     <button class="button PollutionButton">Overpopulation</button>
@@ -36,10 +40,10 @@
                 <div class = 'PollutionTitle'> Pollution </div>
                 <div class="PollutionLeft">
                     <div class="PollutionButtonSection">
-                        <button >Click Me!</button>
-                        <button >Click Me!</button>
-                        <button >Click Me!</button>
-                        <button >Click Me!</button>
+                        <button >Air!</button>
+                        <button >Water</button>
+                        <button >Soil</button>
+                        <button >Noise</button>
                     </div>
                 </div>
                 <div class="PollutionRight">
