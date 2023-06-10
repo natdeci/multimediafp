@@ -1,58 +1,3 @@
-*{
-  margin: 0;
-  padding: 0;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  scroll-behavior: smooth;
-}
-
-.container{
-  width: 100%;
-  max-height: 400px;
-  /* padding-left: 8%;
-  padding-right: 8%; */
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.wrapper{
-height: 100vh;
-overflow-y: auto;
-overflow-x: hidden;
-perspective: 10px;
-}
-
-header{
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100%;
-transform-style: preserve-3d;
-z-index: -1;
-}
-
-.background, .layer1, .layer2, .layer3{
-position: absolute;
-height: 100%;
-width: 100%;
-object-fit: cover;
-}
-
-.background{
-transform: translateZ(-50px)scale(6);
-}
-
-.layer1{
-transform:translateZ(-25px)scale(4);
-}
-
-.layer2{
-transform: translateZ(-10px)scale(3);
-}
-.layer2half{
-transform: translateZ(-6px)scale(1.75);
-}
-
 .introbot{
 position: static;
 height: 90vw;
@@ -71,145 +16,31 @@ margin-top: 10%;
 margin-left: 10%;
 }
 
+.introbot-text2{
+
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  margin-top: 25%;
+  margin-left: 10%;
+  
+  }
+
 .navigation{
-position: absolute;
-width: 100%;
-height: 50%;
+  position: absolute;
+  width: 100%;
+  height: 50%;
 
-margin-top: 30%;
+  margin-top: 30%;
 
-justify-content: space-evenly;
-background-color: blue;
+  justify-content: space-evenly;
 
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-
-}
-
-/* Button Section */
-
-button{
-border-radius: 100px;
-border-color: transparent;
-}
-
-.PollutionButton {
-position: relative;
-background:linear-gradient(to bottom,#b94400 5%, #745007 100%);
-/* display:inline-block; */
-cursor:pointer;
-color:#ffffff;
-font-size:50px;
-padding:20px 100px;
-margin: 20px 20px;
-width: 50%;
-flex-basis: calc(50% - 40px);
-display: flex; 
-justify-content: center;
-flex-direction: column;
-}
-
-.Button:hover {
-background-color:#5cbf2a;
-}
-.Button:active {
-position:relative;
-top:1px;
-}
-
-/* 
-
-.PollutionButton{
-background-color: orange;
-} */
-
-/* pollution section */
-
-.pollution{
-background-image: linear-gradient(180deg, #142E0F, darkgreen);
-position: relative;
-height: 120vh;
-display: flex;
-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 
 }
 
-.PollutionMargins{
-
-width: 100%;
-/* height: 100%; */
-background-color: black;
-/* flex-wrap: wrap; */
-display: table;
-}
-
-.PollutionTitle{
-display: flex;
-width: 100%;
-font-size: 50px;
-justify-content: center;
-background-color: white;
-}
-
-.PollutionLeft{
-padding: 10px;
-position: absolute;
-width: 35%;
-background-color: white;
-left: 0;
-}
-
-.PollutionRight{
-
-position: absolute;
-width: 62%;
-background-color: #745007;
-right: 0;
-}
-
-.PollutionButtonSection{
-display: flex;
-flex-direction: column;
-justify-content: center;
-
-padding:50px 100px;
-
-
-}
-
-.PollutionButtonSection > button{
-display: flex;
-flex-direction: column;
-justify-content: center;
-font-size: 50px;
-justify-content: center;
-padding: 19px;
-margin-bottom: 10px;
-background-color: #5cbf2a;
-
-}
-
-
-.info-box{
-display: flex;
-
-}
-
-.climatechange{
-background-color: aqua;
-height: 120vh;
-}
-
-.overpopulation{
-background-color: green;
-height: 120vh;
-}
-
-.deforestation{
-background-color: brown;
-height: 120vh;
-}
 *{
     margin: 0;
     padding: 0;
@@ -265,40 +96,6 @@ header{
   transform: translateZ(-6px)scale(1.75);
 }
 
-.introbot{
-  position: static;
-  height: 90vw;
-  margin-top: -5px;
-  background-color: #142E0F;
-  font-size: 2vw;
-  color: white;
-  align-content: center;
-}
-
-.introbot-text{
-  position: absolute;
-  text-align: center;
-  width: 80%;
-  margin-top: 10%;
-  margin-left: 10%;
-}
-
-.navigation{
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  
-  margin-top: 30%;
-  
-  justify-content: space-evenly;
-  background-color: blue;
-  
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  
-}
-
 /* Button Section */
 
 button{
@@ -340,18 +137,16 @@ button{
 
 .pollution{
   background-image: linear-gradient(180deg, #142E0F, darkgreen);
-  position: absolute;
   height: 120vh;
   display: flex;
   width: 100%;
-  
 }
 
 .PollutionMargins{
   
   width: 100%;
   /* height: 100%; */
-  background-color: black;
+  /* background-color: black; */
   /* flex-wrap: wrap; */
   display: table;
 }
@@ -361,25 +156,28 @@ button{
   width: 100%;
   font-size: 50px;
   justify-content: center;
-  background-color: white;
+  color: white;
+  margin-bottom: 50px;
 }
 
 .PollutionLeft{
   padding: 10px;
   position: absolute;
   width: 35%;
-  background-color: white;
   left: 0;
 }
 
 .PollutionRight{
-  
   position: absolute;
-  width: 62%;
+  width: 65%;
+  margin-right: 25px;
   padding-bottom: 46vh;
-  background-color: #745007;
+  border-radius: 50px;
+  background-color: #142E0F;
   right: 0;
+  color: white;
   justify-content: center;
+  box-shadow: 5px 5px 5px black;
 }
 
 .PollutionButtonSection{
@@ -400,26 +198,163 @@ button{
   justify-content: center;
 	padding: 19px;
   margin-bottom: 10px;
-  background-color: #5cbf2a;
+  background-color: #A0C984;
   cursor:pointer;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.PollutionButtonSection > button:focus{
+  background-color: #142E0F;
+  color: white;
+}
+
+.PollutionButtonSection > button:hover{
+  background-color: #0C5101;
+  scale: 1.1;
+  transition: 0.3s;
+  box-shadow: 5px 5px 5px black;
 }
 
 .info-box{
-  justify-content: center;
+  top: 50px;
+  margin-left: 50px;
   font-size: 50px;
+  text-align: left;
+}
+
+#pollu{
+  display: block;
+}
+
+#air, #water, #soil, #noise{
+  display: none;
 }
 
 .climatechange{
-  background-color: aqua;
-  height: 120vh;
-  }
-  
-  .overpopulation{
-  background-color: green;
-  height: 120vh;
-  }
-  
-  .deforestation{
-  background-color: brown;
-  height: 120vh;
-  }
+background-color: #FFE4C4;
+height: 130vh;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.climate1{
+  display: flex;
+  list-style-type: none;
+  margin-left: 10px;
+  padding: 35px;
+}
+.climate2{
+  display: flex;
+  list-style-type: none;
+  margin-left: 10px;
+  padding: 35px;
+}
+.climatechange h2{
+  font-size: 100px;
+}
+.climate2 img{
+  scale: 200%;
+  margin-left: 40px;
+  padding-top: 70px;
+  margin-right: 20px;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+.climate2 p{
+  margin-left: 5px;
+  padding-left: 30px;
+  padding-right: 20px;
+  text-align: justify;
+  font-size: 55px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.climate1 img{
+  scale: 200%;
+  margin-left: 25px;
+  padding-top: 70px;
+  margin-right: 20px;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+.climate1 p{
+  margin-left: 20px;
+  padding-left: 20px;
+  text-align: justify;
+  font-size: 55px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+/* .climatechange p{
+  font-size: 30px;
+} */
+
+.overpopulation{
+background-color: green;
+height: 120vh;
+}
+
+.deforestation{
+background-color: brown;
+height: 1080px;
+}
+
+/* Overpopulation */
+
+.OverpopulationTitle h1{
+  font-size: 84px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overpopulation{
+  padding-top: 100px;
+}
+
+.OverpopulationPercentage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.OverpopulationPercentage img{
+  width: 400px;
+  height: 400px;
+  transition: 3s;
+}
+
+.OverpopulationPercentage img:hover{
+  transform: rotate(10800deg);
+  scale: 1.1;
+}
+
+.OverpopulationPercentage h1{
+  font-size: 126px;
+  color: #b94400;
+}
+
+.OverpopulationPercentage h3{
+  font-size: 30px;
+}
+
+.OverpopulationPercentage h4{
+font-size: 30px;
+}
+
+.PercentageText{
+  padding-left: 50px;
+}
+
+.OverpopulationText{
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 50px;
+}
+
+.OverpopulationText p{
+  font-size: 30px;
+  text-align: center;
+}

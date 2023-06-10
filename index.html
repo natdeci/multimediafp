@@ -23,9 +23,11 @@
             <img src="Assets/Foreground-but-better.png" class="layer3">
         </header>
         <div class="introbot">
+                
                 <div class="introbot-text">
                     Welcome to our virtual hub dedicated to exploring and addressing pressing environmental issues. Join us as we embark on a journey to understand and restore our planet. Our goal is to raise people’s awareness by providing knowledge and overview of the major issues.
                 </div>
+                <div class="introbot-text2"> <h3>LEARN ABOUT THE PROBLEMS:</h3> </div>
                 <div class="navigation">
                     <button class="button PollutionButton pol">Pollution</button>
                     <button class="button PollutionButton cli">Climate Change</button>
@@ -38,78 +40,35 @@
         <div class="pollution">
             <div class = 'PollutionMargins'>
                 <div class = 'PollutionTitle'> <h2>Pollution</h2> </div>
+                
                 <div class="PollutionLeft">
                     <div class="PollutionButtonSection">
                         <button onclick="visibleAir()">Air</button>
                         <button onclick="visibleWater()">Water</button>
                         <button onclick="visibleSoil()">Soil</button>
                         <button onclick="visibleNoise()">Noise</button>
+                        
                     </div>
                 </div>
                 <div class="PollutionRight">
-                    <div class="info-box" id="air" readonly visibility = "visible"> 
+                    <div class="info-box" id="air" readonly> 
                         <li>acid rain</li>
                         <li>ozone depletion</li>
                         <li>risk of diseases such as cancer</li>
                         <li>skin disease</li> </div>
-                    <div class="info-box water" id="water" readonly visibility = "hidden"> risk of diseases, risk of sea animal extinctions, threat to water ecosystem</div>
-                    <div class="info-box soil" id="soil" readonly visibility = "hidden"> soil nutrition degrading, toxicity causing respiratory and lung diseases, threat to animal life</div>
-                    <div class="info-box noise" id="noise" readonly visibility = "hidden">risk of hearing complications, hypertension
-                    
-                    <script>
-                        function visibleAir() {
-                            var air = document.getElementById("air");
-                            var water = document.getElementById("water");
-                            var soil = document.getElementById("soil");
-                            var noise = document.getElementById("noise");
-                            
-                            if ((water.style.visibility == "visible" || soil.style.visibility == "visible" || noise.style.visibility == "visible") && air.style.visibility == "hidden") {
-                                air.style.visibility = "visible";
-                                water.style.visibility = "hidden";
-                                soil.style.visibility = "hidden";
-                                noise.style.visibility = "hidden";
-                            } 
-                            }
-                            function visibleWater() {
-                            var air = document.getElementById("air");
-                            var water = document.getElementById("water");
-                            var soil = document.getElementById("soil");
-                            var noise = document.getElementById("noise");
-                            
-                            if ((air.style.visibility == "visible" || soil.style.visibility == "visible" || noise.style.visibility == "visible") && water.style.visibility == "hidden") {
-                                water.style.visibility = "visible";
-                                air.style.visibility = "hidden";
-                                soil.style.visibility = "hidden";
-                                noise.style.visibility = "hidden";
-                            } 
-                            }
-                            function visibleSoil() {
-                            var air = document.getElementById("air");
-                            var water = document.getElementById("water");
-                            var soil = document.getElementById("soil");
-                            var noise = document.getElementById("noise");
-                            
-                            if ((water.style.visibility == "visible" || air.style.visibility == "visible" || noise.style.visibility == "visible") && soil.style.visibility == "hidden") {
-                                soil.style.visibility = "visible";
-                                water.style.visibility = "hidden";
-                                air.style.visibility = "hidden";
-                                noise.style.visibility = "hidden";
-                            } 
-                            }
-                            function visibleNoise() {
-                            var air = document.getElementById("air");
-                            var water = document.getElementById("water");
-                            var soil = document.getElementById("soil");
-                            var noise = document.getElementById("noise");
-                            
-                            if ((water.style.visibility == "visible" || soil.style.visibility == "visible" || air.style.visibility == "visible") && noise.style.visibility == "hidden") {
-                                noise.style.visibility = "visible";
-                                water.style.visibility = "hidden";
-                                soil.style.visibility = "hidden";
-                                air.style.visibility = "hidden";
-                            } 
-                            }
-                    </script>
+                    <div class="info-box" id="water" readonly> 
+                        <li>risk of diseases</li>
+                        <li>risk of sea animal extinctions</li>
+                        <li>threat to water ecosystem</li></div>
+                    <div class="info-box" id="soil" readonly>
+                        <li>nutrition degrading</li> 
+                        <li>toxicity causing respiratory and lung diseases</li>
+                        <li>threat to animal life</li></div>
+                    <div class="info-box" id="noise" readonly>
+                        <li>risk of hearing complications</li>
+                        <li>hypertension</li></div>
+                    <div class="info-box" id="pollu" readonly> 
+                        <p><bold>Definition:</bold> Exposure to dangerous substances (ex: smoke, bacteria, etc) which causes environmental changes which can impact the cycle of life</p>
                     </div>
                 </div>
             </div>
@@ -117,18 +76,135 @@
 
         <div class="climatechange">
             <h2>Climate Change</h2>
-            <div class="climatePar">Environmental changes caused by greenhouse gases production. Activities such as burning fossil fuels, transportation gas emissions, and other carbon emission activities can lead to high increase of temperature or global warming, melting glaciers, epidemics, etc.
-                <p></p>
-            </div>
+            <br> 
+            <div class="climate1">
+                <li><img src="/Assets/cloud.png" alt=""></li>
+                <li><p>Environmental changes caused by greenhouse gases production. 
+                    Activities such as burning fossil fuels, transportation gas emissions, and other carbon emission activities can lead to high increase 
+                    of temperature or global warming, melting glaciers, epidemics, etc.</p></li>
+            </div>           
+            <br>
+            <br>
+            <br>
+            <div class="climate2">
+                <li><p>Global Warming is a long-term warming of the planet's overall temperature. 
+                    Despite of this process has been going on for a long time, its pace has significantly increased in the last millennium. 
+                    </p></li>
+                <li><img src="/Assets/cloud.png" alt=""></li>
+            </div> 
         </div>
-        <div class="deforestation">
         
+        <div class="deforestation">
+            <img src = "/Assets/Deforestation.png">
         </div>
+        
         <div class="overpopulation">
-            
+            <div class="OverpopulationTitle">
+                <h1>OVERPOPULATION</h1>
+            </div>
+            <div class = "OverpopulationPercentage">
+                <div class="OverpopulationPercentageImage">
+                    <img src="/Assets/earthvector.png" alt="">
+                </div>
+                <div class="PercentageText">
+                    <h1>79.47%</h1>
+                    <h3>total increase of population from 20 years ago</h3>
+                    <h4>*Increased from 6,3 billion to 8,045,311,447</h4>
+                </div>
+            </div>
+            <div class = "OverpopulationText">
+                <p>Unsustainable large population leading to resources depletion and increases the risks to environmental changes caused by human activities, including the increase of waste and pollution, toxic gas emissions by transportation, etc.</p>
+            </div>
         </div>
 
     </div>
     
+    <script>
+        function visibleAir() {
+            var air = document.getElementById("air");
+            var water = document.getElementById("water");
+            var soil = document.getElementById("soil");
+            var noise = document.getElementById("noise");
+            var pollu = document.getElementById("pollu");
+            
+            if (pollu.style.display ==="block" && air.style.display === "none") {
+                air.style.display = "block";
+                pollu.style.display = "none"
+                water.style.display = "none"
+                soil.style.display = "none"
+                noise.style.display = "none"
+            }else {
+                air.style.display = "none";
+                pollu.style.display = "block"
+                water.style.display = "none"
+                soil.style.display = "none"
+                noise.style.display = "none"
+            }
+        }
+        function visibleWater() {
+            var air = document.getElementById("air");
+            var water = document.getElementById("water");
+            var soil = document.getElementById("soil");
+            var noise = document.getElementById("noise");
+            var pollu = document.getElementById("pollu");
+            
+            if (pollu.style.display ==="block" && water.style.display === "none") {
+                water.style.display = "block";
+                pollu.style.display = "none"
+                air.style.display = "none"
+                soil.style.display = "none"
+                noise.style.display = "none"
+            }else {
+                water.style.display = "none";
+                pollu.style.display = "block"
+                air.style.display = "none"
+                soil.style.display = "none"
+                noise.style.display = "none"
+            }
+        }
+        function visibleSoil() {
+            var air = document.getElementById("air");
+            var water = document.getElementById("water");
+            var soil = document.getElementById("soil");
+            var noise = document.getElementById("noise");
+            var pollu = document.getElementById("pollu");
+            
+            if (pollu.style.display ==="block" && soil.style.display === "none") {
+                soil.style.display = "block";
+                pollu.style.display = "none"
+                water.style.display = "none"
+                air.style.display = "none"
+                noise.style.display = "none"
+            }else {
+                soil.style.display = "none";
+                pollu.style.display = "block"
+                water.style.display = "none"
+                air.style.display = "none"
+                noise.style.display = "none"
+            }
+        }
+        function visibleNoise() {
+            var air = document.getElementById("air");
+            var water = document.getElementById("water");
+            var soil = document.getElementById("soil");
+            var noise = document.getElementById("noise");
+            var pollu = document.getElementById("pollu");
+            
+            if (pollu.style.display ==="block" && noise.style.display === "none") {
+                noise.style.display = "block";
+                pollu.style.display = "none"
+                water.style.display = "none"
+                soil.style.display = "none"
+                air.style.display = "none"
+            }else {
+                noise.style.display = "none";
+                pollu.style.display = "block"
+                water.style.display = "none"
+                soil.style.display = "none"
+                air.style.display = "none"
+            }
+        }
+    </script>
 </body>
+
 </html>
