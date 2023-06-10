@@ -128,8 +128,8 @@ button{
 
 .pollution{
   background-image: linear-gradient(180deg, #142E0F, darkgreen);
-  position: absolute;
-  height: 100vh;
+  position: relative;
+  height: 120vh;
   display: flex;
   width: 100%;
   
@@ -144,25 +144,26 @@ button{
   display: table;
 }
 
-.pollutionTitle{
+.PollutionTitle{
   display: flex;
   width: 100%;
-  height: 15%;
-  background-color: blue;
+  font-size: 50px;
+  justify-content: center;
+  background-color: white;
 }
 
 .PollutionLeft{
-  margin: 10px;
+  padding: 10px;
   position: absolute;
-  width: 50%;
-  background-color: aqua;
+  width: 35%;
+  background-color: white;
   left: 0;
 }
 
 .PollutionRight{
-  margin: 10px;
+  
   position: absolute;
-  width: 50%;
+  width: 62%;
   background-color: #745007;
   right: 0;
 }
@@ -173,8 +174,8 @@ button{
   justify-content: center;
   
 	padding:50px 100px;
-  margin: 20px 20px;
-  height: 20%;
+  
+  
 }
 
 .PollutionButtonSection > button{
@@ -183,8 +184,15 @@ button{
   justify-content: center;
   font-size: 50px;
   justify-content: center;
-	padding: 20px;
+	padding: 19px;
   margin-bottom: 10px;
+  background-color: #5cbf2a;
+  
+}
+
+
+.info-box{
+  display: flex;
   
 }
 
