@@ -54,7 +54,8 @@ header{
 }
 
 .introbot{
-  height: 50vw;
+  position: static;
+  height: 55vw;
   margin-top: -5px;
   background-color: #142E0F;
   font-size: 2vw;
@@ -66,12 +67,61 @@ header{
   position: absolute;
   text-align: center;
   width: 80%;
-  margin-top: 15%;
+  margin-top: 10%;
   margin-left: 10%;
 }
 
-.pollution{
+.navigation{
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  margin-left: 10%;
+  margin-top: 30%;
+  flex-wrap: wrap;
+  background-color: blue;
+}
+
+
+/* .pollution{
   background-image: linear-gradient(180deg, #142E0F, darkgreen);
   position: relative;
   height: 200vh;
+} */
+
+
+
+
+
+/* Button Section */
+
+button{
+  border-radius: 50px;
+  border-color: transparent;
 }
+
+.PollutionButton {
+  position: relative;
+	background:linear-gradient(to bottom,#b94400 5%, #745007 100%);
+	/* background-color:#745007; */
+	border-radius:100px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	padding:60px 250px;
+}
+
+.Button:hover {
+	background-color:#5cbf2a;
+}
+.Button:active {
+	position:relative;
+	top:1px;
+}
+
+/* 
+
+.PollutionButton{
+  background-color: orange;
+} */
+
