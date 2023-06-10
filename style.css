@@ -128,7 +128,7 @@ button{
 
 .pollution{
   background-image: linear-gradient(180deg, #142E0F, darkgreen);
-  position: absolute;
+  position: relative;
   height: 120vh;
   display: flex;
   width: 100%;
@@ -190,17 +190,8 @@ button{
   
 }
 
+
 .info-box{
   display: flex;
   
-}
-
-/* climate change */
-.climatechange{
-  background-color: #5cbf2a;
-  position: absolute;
-  height: 120vh;
-  display: flex;
-  width: 100%;
-  margin-top: 55%;
 }
