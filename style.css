@@ -195,18 +195,3 @@ button{
   display: flex;
   
 }
-
-.climatechange{
-  background-color: aqua;
-  height: 120vh;
-}
-
-.overpopulation{
-  background-color: green;
-  height: 120vh;
-}
-
-.deforestation{
-  background-color: brown;
-  height: 120vh;
-}
