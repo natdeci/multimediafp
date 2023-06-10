@@ -171,8 +171,19 @@ button{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 50px;
+  
 	padding:50px 100px;
   margin: 20px 20px;
   height: 20%;
+}
+
+.PollutionButtonSection > button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 50px;
+  justify-content: center;
+	padding: 20px;
+  margin-bottom: 10px;
+  
 }
