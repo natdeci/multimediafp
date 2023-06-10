@@ -82,11 +82,11 @@ header{
 }
 
 
-/* .pollution{
+.pollution{
   background-image: linear-gradient(180deg, #142E0F, darkgreen);
   position: relative;
   height: 200vh;
-} */
+}
 
 
 
@@ -125,3 +125,22 @@ button{
   background-color: orange;
 } */
 
+/* pollution section */
+
+.pollution{
+  display: flex;
+  width: 100%;
+}
+
+.PollutionLeft{
+  flex: 30%;
+}
+
+.PollutionRight{
+  flex: 70%;
+}
+
+.PollutionButtonSection{
+  display: flex;
+  flex-direction: column;
+}
