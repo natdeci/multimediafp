@@ -128,7 +128,7 @@ button{
 
 .pollution{
   background-image: linear-gradient(180deg, #142E0F, darkgreen);
-  position: absolute;
+  position: relative;
   height: 120vh;
   display: flex;
   width: 100%;
@@ -190,7 +190,23 @@ button{
   
 }
 
+
 .info-box{
   display: flex;
   
+}
+
+.climatechange{
+  background-color: aqua;
+  height: 120vh;
+}
+
+.overpopulation{
+  background-color: green;
+  height: 120vh;
+}
+
+.deforestation{
+  background-color: brown;
+  height: 120vh;
 }
