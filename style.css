@@ -194,3 +194,13 @@ button{
   display: flex;
   
 }
+
+/* climate change */
+.climatechange{
+  background-color: #5cbf2a;
+  position: absolute;
+  height: 120vh;
+  display: flex;
+  width: 100%;
+  margin-top: 55%;
+}
