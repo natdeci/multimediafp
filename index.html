@@ -40,17 +40,77 @@
                 <div class = 'PollutionTitle'> <h2>Pollution</h2> </div>
                 <div class="PollutionLeft">
                     <div class="PollutionButtonSection">
-                        <button >Air</button>
-                        <button >Water</button>
-                        <button >Soil</button>
-                        <button >Noise</button>
+                        <button onclick="visibleAir()">Air</button>
+                        <button onclick="visibleWater()">Water</button>
+                        <button onclick="visibleSoil()">Soil</button>
+                        <button onclick="visibleNoise()">Noise</button>
                     </div>
                 </div>
                 <div class="PollutionRight">
-                    <div class="info-box air" readonly> Air</div>
-                    <div class="info-box water" readonly> Water</div>
-                    <div class="info-box soil" readonly> Soil</div>
-                    <div class="info-box noise" readonly>Noise</div>
+                    <div class="info-box" id="air" readonly visibility = "visible"> 
+                        <li>acid rain</li>
+                        <li>ozone depletion</li>
+                        <li>risk of diseases such as cancer</li>
+                        <li>skin disease</li> </div>
+                    <div class="info-box water" id="water" readonly visibility = "hidden"> risk of diseases, risk of sea animal extinctions, threat to water ecosystem</div>
+                    <div class="info-box soil" id="soil" readonly visibility = "hidden"> soil nutrition degrading, toxicity causing respiratory and lung diseases, threat to animal life</div>
+                    <div class="info-box noise" id="noise" readonly visibility = "hidden">risk of hearing complications, hypertension
+                    
+                    <script>
+                        function visibleAir() {
+                            var air = document.getElementById("air");
+                            var water = document.getElementById("water");
+                            var soil = document.getElementById("soil");
+                            var noise = document.getElementById("noise");
+                            
+                            if ((water.style.visibility == "visible" || soil.style.visibility == "visible" || noise.style.visibility == "visible") && air.style.visibility == "hidden") {
+                                air.style.visibility = "visible";
+                                water.style.visibility = "hidden";
+                                soil.style.visibility = "hidden";
+                                noise.style.visibility = "hidden";
+                            } 
+                            }
+                            function visibleWater() {
+                            var air = document.getElementById("air");
+                            var water = document.getElementById("water");
+                            var soil = document.getElementById("soil");
+                            var noise = document.getElementById("noise");
+                            
+                            if ((air.style.visibility == "visible" || soil.style.visibility == "visible" || noise.style.visibility == "visible") && water.style.visibility == "hidden") {
+                                water.style.visibility = "visible";
+                                air.style.visibility = "hidden";
+                                soil.style.visibility = "hidden";
+                                noise.style.visibility = "hidden";
+                            } 
+                            }
+                            function visibleSoil() {
+                            var air = document.getElementById("air");
+                            var water = document.getElementById("water");
+                            var soil = document.getElementById("soil");
+                            var noise = document.getElementById("noise");
+                            
+                            if ((water.style.visibility == "visible" || air.style.visibility == "visible" || noise.style.visibility == "visible") && soil.style.visibility == "hidden") {
+                                soil.style.visibility = "visible";
+                                water.style.visibility = "hidden";
+                                air.style.visibility = "hidden";
+                                noise.style.visibility = "hidden";
+                            } 
+                            }
+                            function visibleNoise() {
+                            var air = document.getElementById("air");
+                            var water = document.getElementById("water");
+                            var soil = document.getElementById("soil");
+                            var noise = document.getElementById("noise");
+                            
+                            if ((water.style.visibility == "visible" || soil.style.visibility == "visible" || air.style.visibility == "visible") && noise.style.visibility == "hidden") {
+                                noise.style.visibility = "visible";
+                                water.style.visibility = "hidden";
+                                soil.style.visibility = "hidden";
+                                air.style.visibility = "hidden";
+                            } 
+                            }
+                    </script>
+                    </div>
                 </div>
             </div>
         </div>

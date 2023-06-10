@@ -164,8 +164,10 @@ button{
   
   position: absolute;
   width: 62%;
+  padding-bottom: 46vh;
   background-color: #745007;
   right: 0;
+  justify-content: center;
 }
 
 .PollutionButtonSection{
@@ -187,10 +189,25 @@ button{
 	padding: 19px;
   margin-bottom: 10px;
   background-color: #5cbf2a;
-  
+  cursor:pointer;
 }
 
 .info-box{
-  display: flex;
-  
+  justify-content: center;
+  font-size: 50px;
 }
+
+.climatechange{
+  background-color: aqua;
+  height: 120vh;
+  }
+  
+  .overpopulation{
+  background-color: green;
+  height: 120vh;
+  }
+  
+  .deforestation{
+  background-color: brown;
+  height: 120vh;
+  }
