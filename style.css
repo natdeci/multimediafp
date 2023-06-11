@@ -28,16 +28,17 @@ margin-left: 10%;
 
 .navigation{
   position: absolute;
-  width: 100%;
+  width: 95%;
   height: 50%;
+  margin-left: 2.5%;
 
   margin-top: 30%;
 
-  justify-content: space-evenly;
-
+  justify-content: center;
+  /* background-color: black; */
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
 
 }
 
@@ -105,7 +106,71 @@ button{
 
 .PollutionButton {
   position: relative;
-	background:linear-gradient(to bottom,#b94400 5%, #745007 100%);
+	background:linear-gradient(to bottom,#9C9C9C 5%, #DDDCD9 100%);
+	/* display:inline-block; */
+	cursor:pointer;
+	color:#ffffff;
+	font-size:50px;
+	padding:20px 100px;
+  margin: 20px 20px;
+  width: 50%;
+  flex-basis: calc(50% - 40px);
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ClimateButton {
+  position: relative;
+	background:linear-gradient(to bottom,#00CECE 5%, #A50000 100%);
+	/* display:inline-block; */
+	cursor:pointer;
+	color:#ffffff;
+	font-size:50px;
+	padding:20px 100px;
+  margin: 20px 20px;
+  width: 50%;
+  flex-basis: calc(50% - 40px);
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ClimateButton {
+  position: relative;
+	background-image: linear-gradient(180deg, #C6AC97 35%, #FFE4C4);
+	/* display:inline-block; */
+	cursor:pointer;
+	color:#ffffff;
+	font-size:50px;
+	padding:20px 100px;
+  margin: 20px 20px;
+  width: 50%;
+  flex-basis: calc(50% - 40px);
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+}
+
+.DeforestButton {
+  position: relative;
+	background-image: linear-gradient(180deg, #7f5a1a 35%, #493f33);
+	/* display:inline-block; */
+	cursor:pointer;
+	color:#ffffff;
+	font-size:50px;
+	padding:20px 100px;
+  margin: 20px 20px;
+  width: 50%;
+  flex-basis: calc(50% - 40px);
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+}
+
+.OverButton {
+  position: relative;
+	background-image: linear-gradient(180deg, #3F64B0 35%, #7AA3FF);
 	/* display:inline-block; */
 	cursor:pointer;
 	color:#ffffff;
@@ -251,8 +316,11 @@ text-align: center;
   margin-left: 10px;
   padding: 35px;
 }
-.climatechange h2{
-  font-size: 100px;
+.climatechange h1{
+  font-size: 84px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .climate2 img{
   position: relative;
@@ -294,15 +362,11 @@ text-align: center;
 } */
 
 .overpopulation{
-background-color: green;
 background-image: linear-gradient(180deg, #3F64B0 35%, #7AA3FF);
 height: 230vh;
 }
 
-.deforestation{
-background-color: #7f5a1a;
-height: 1080px;
-}
+
 
 /* Overpopulation */
 
@@ -411,6 +475,99 @@ font-size: 30px;
 
 .Tr4{
   position: absolute;
-  margin-top: 27.6%;
-  /* scale: 0.5; */
+  margin-top: 38%;
+}
+
+.A-Button{
+  /* position:relative; */
+ width: 65%;
+ height: 35%;
+ text-decoration: none;
+}
+
+/* Deforestation */
+.deforestation{
+  background-image: linear-gradient(180deg, #7f5a1a 35%, #493f33);
+  background-color: #7f5a1a;
+  height: 1080px;
+}
+
+.deforestation h1{
+  font-size: 5vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.deforestBigBox{
+  background-image: url("Assets/Deforest-BG1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: absolute;
+  background-color: #00CECE;
+  color: white;
+  font-size: 1.5vw;
+  height: 90%;
+  width: 95%;
+  margin-left: 2.5%;
+  border-radius: 25px;
+}
+
+.deforestLeft{
+  height: 100%;
+  width: 33%;
+  background-image: url("Assets/Deforest-BG4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  transition: 0.3s;
+}
+
+.deforestLeft:hover{
+  background-image: url("Assets/Transparent.png");
+  transition: 0.3s;
+}
+
+.deforestMid{
+  height: 100%;
+  width: 34%;
+  background-image: url("Assets/Deforest-BG3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s;
+}
+
+.deforestMid:hover{
+  background-image: url("Assets/Transparent.png");
+  transition: 0.3s;
+}
+
+.deforestRight{
+  height: 100%;
+  width: 33%;
+  background-image: url("Assets/Deforest-BG2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transition: 0.3s;
+}
+
+.deforestRight:hover{
+  background-image: url("Assets/Transparent.png");
+  transition: 0.3s;
+}
+
+.defInfo{
+  margin-top: 110%;
+  width: 90%;
+  margin-left: 5%;
+  align-content: center;
+  text-align: center;
+  background-color: #7f5a1a;
+  border-radius: 25px;
 }
