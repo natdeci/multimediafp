@@ -136,7 +136,8 @@ button{
 /* pollution section */
 
 .pollution{
-  background-image: linear-gradient(180deg, #142E0F, darkgreen);
+  background-image: linear-gradient(180deg, #8D8C8C, #a29398);
+  /* background-color: ; */
   height: 120vh;
   display: flex;
   width: 100%;
@@ -232,7 +233,7 @@ button{
 }
 
 .climatechange{
-background-color: #FFE4C4;
+  background-image: linear-gradient(180deg, #C6AC97 35%, #FFE4C4);
 height: 130vh;
 justify-content: center;
 align-items: center;
@@ -254,6 +255,7 @@ text-align: center;
   font-size: 100px;
 }
 .climate2 img{
+  position: relative;
   scale: 200%;
   margin-left: 40px;
   padding-top: 70px;
@@ -271,6 +273,7 @@ text-align: center;
   overflow-wrap: break-word;
 }
 .climate1 img{
+  position: relative;
   scale: 200%;
   margin-left: 25px;
   padding-top: 70px;
@@ -292,11 +295,12 @@ text-align: center;
 
 .overpopulation{
 background-color: green;
+background-image: linear-gradient(180deg, #3F64B0 35%, #7AA3FF);
 height: 230vh;
 }
 
 .deforestation{
-background-color: brown;
+background-color: #7f5a1a;
 height: 1080px;
 }
 
@@ -389,4 +393,24 @@ font-size: 30px;
   width: 300px;
   filter: grayscale(0%);
   transform: rotate(0deg);
+}
+
+.Tr1{
+  position: absolute;
+  margin-top: 77.3%;
+}
+.Tr2{
+  position: absolute;
+  margin-top: 50%;
+}
+
+.Tr3{
+  position: absolute;
+  margin-top: 55%;
+}
+
+.Tr4{
+  position: absolute;
+  margin-top: 27.6%;
+  /* scale: 0.5; */
 }
