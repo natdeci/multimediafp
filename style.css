@@ -227,17 +227,16 @@ button{
 }
 
 .PollutionLeft{
-  padding: 10px;
   position: absolute;
   width: 35%;
-  left: 0;
+  text-align: center;
 }
 
 .PollutionRight{
   position: absolute;
   width: 65%;
   margin-right: 25px;
-  padding-bottom: 46vh;
+  /* padding-bottom: 46vh; */
   border-radius: 50px;
   background-color: #142E0F;
   right: 0;
@@ -250,10 +249,7 @@ button{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 	padding:50px 100px;
-  
-  
 }
 
 .PollutionButtonSection > button{
@@ -270,6 +266,10 @@ button{
   transition: 0.3s;
 }
 
+.PollutionButtonSection > button > p{
+  width: 100%;
+}
+
 .PollutionButtonSection > button:focus{
   background-color: #142E0F;
   color: white;
@@ -283,10 +283,10 @@ button{
 }
 
 .info-box{
-  top: 50px;
   margin-left: 50px;
   font-size: 50px;
   text-align: left;
+  padding:50px;
 }
 
 #pollu{
@@ -295,6 +295,22 @@ button{
 
 #air, #water, #soil, #noise{
   display: none;
+}
+
+#pollu > p{
+  padding:50px 20px;
+}
+
+#air > p{
+  padding:41.5px 20px;
+}
+
+#water > p, #soil > p{
+  padding:58.2px 20px;
+}
+
+#noise > p{
+  padding:74.9px 20px;
 }
 
 .climatechange{
